@@ -1,0 +1,127 @@
+-- Decompiler will be improved VERY SOON!
+-- Decompiled with Konstant V2.1, a fast Luau decompiler made in Luau by plusgiant5 (https://discord.gg/brNTY8nX8t)
+-- Decompiled on 2025-07-21 10:05:39
+-- Luau version 6, Types version 3
+-- Time taken: 0.003024 seconds
+
+local Parent = script:FindFirstAncestor("ExperimentLayers").Parent
+game:DefineFastString("LuaAppOmniSearchLayer", "PlayerApp.SearchResultsPage")
+game:DefineFastString("XboxClassicUILayer", "Consoles.Xbox.Classic.UI")
+game:DefineFastString("MobileSoundAndHapticsLayer", "Mobile.UI.Shell")
+return {
+	GameTileLayer = "PlayerApp.HomeGamePage.UX";
+	OmniSearchLayer = game:GetFastString("LuaAppOmniSearchLayer");
+	SearchBarLayer = "PlayerApp.TopNavSearchBox";
+	SearchAutocompleteLayer = "PlayerApp.TopNavSearchBox";
+	HomeOmniFeedLayer = "PlayerApp.HomePage.UX";
+	DiscoverPageLayer = "SearchDiscover.DiscoverPage.UX";
+	DiscoverPageAccessLayer = "SearchDiscover.DiscoverPage.UX.Access";
+	SearchLandingPageLayer = "Growth.Omnisearch.SearchLandingPage";
+	SocialFriendsLayer = "Social.Friends";
+	SocialProfileLayer = "Social.Profile";
+	SocialProfileViewSocialLinksLayer = "Social.ProfileViewSocialLinks";
+	SocialSelfProfileViewLayer = "Social.SelfProfileView";
+	socialAddFriendsPageLayer = "Social.AddFriendsPage";
+	SocialFriendsLandingLayer = "Social.FriendsLanding";
+	SocialConnectTabLayer = "Social.ConnectTab";
+	SocialDisplayNameLayer = "Social.DisplayNameSetting";
+	SocialExperienceDetails = "Social.ExperienceDetails";
+	SocialExperienceDetailsContextualMenu = "Social.ExperienceDetailsContextualMenu";
+	SocialProfilePeekViewLayer = "Social.ProfilePeekView";
+	SocialPartyRollout = "Social.PartyRollout";
+	SocialFriendsCarouselAddFriendsEntryLayer = "Social.FriendsCarouselAddFriendsEntry";
+	SocialAppChat = "Social.AppChat";
+	ContactImporterDevicePermissionNeededModalExposure = "ContactImporter.DevicePermissionNeededModal.Exposure";
+	PartyFormationCreateUser = "Party.Formation.Create.User";
+	PartyFormationInvite = "Party.Formation.Invite";
+	PartyCoordinationUI = "Party.Coordination.UI";
+	PartyCoordinationExperienceJoin = "Party.Coordination.ExperienceJoin";
+	PartyChatPerf = "Party.Chat.Perf";
+	PlayerAppHomePageUXLayer = "PlayerApp.HomePage.UX";
+	PlayerAppHomePageUxTileLayer = "PlayerApp.HomePage.UX.TileLayer";
+	PlayerAppSearchResultsPageUXLayer = "PlayerApp.SearchResultsPage.UX";
+	OmniSearchResultsPageUXExposureLayer = "PlayerApp.OmniSearchResultsPage.UX.Exposure";
+	PlayerAppSeeAllUXLayer = "PlayerApp.SeeAll.UX";
+	PlayButtonUXExposureLayer = "PlayerApp.PlayButton.UX";
+	AvatarExperienceUAAllViews = "AvatarExperience.UA.AllViews";
+	AvatarExperienceUAMarketplaceView = "AvatarExperience.UA.MarketplaceView";
+	AvatarExperienceUACustomizeView = "AvatarExperience.UA.CustomizeView";
+	AvatarExperienceUAItemDetailsView = "AvatarExperience.UA.ItemDetailsView";
+	AvatarExperienceUAActionBarView = "AvatarExperience.UA.ActionBarView";
+	AvatarExperienceUAFilterAndSortView = "AvatarExperience.UA.FilterAndSortView";
+	AvatarExperienceUATopBarView = "AvatarExperience.UA.TopBarView";
+	AvatarExperienceColorPickerExposure = "AvatarExperience.ColorPickerExposure";
+	AvatarExperienceUALayeredClothingSort = "AvatarExperience.UA.LayeredClothingSort";
+	AvatarExperienceUASearchView = "AvatarExperience.UA.SearchView";
+	AvatarMarketplaceALGOONLYAvatarWidget = "AvatarMarketplace.ALGOONLY.AvatarWidget";
+	AvatarMarketplaceALGOONLYCurationWidget = "AvatarMarketplace.ALGOONLY.CurationWidget";
+	AvatarMarketplaceALGOONLYFriendsWidget = "AvatarMarketplace.ALGOONLY.FriendsWidget";
+	AvatarMarketplaceALGOONLYThematicWidget = "AvatarMarketplace.ALGOONLY.ThematicWidget";
+	AvatarMarketplaceALGOONLYTrendingWidget = "AvatarMarketplace.ALGOONLY.TrendingWidget";
+	AvatarExperienceFeatureLayer = "Avatar.AvatarExperience";
+	AvatarExperienceUILayer = "Avatar.AvatarExperience2";
+	AvatarMarketplaceLayer = "AvatarMarketplace.RecommendationsAndSearch.Mobile";
+	AvatarMarketplaceUILayer = "AvatarMarketplace.UI";
+	AvatarMarketplaceAdsLayer = "AvatarMarketplace.Ads";
+	AvatarMarketplaceGuidedFeaturesLayer = "AvatarMarketplace.GuidedFeatures";
+	AvatarMarketplaceDefaultRecSearchLayer = "AvatarMarketplace.RecommendationsAndSearch";
+	AvatarMarketplaceEditor = "AvatarMarketplace.Editor";
+	AvatarMarketplaceItemDetailsPage = "AvatarMarketplace.ItemDetailsPage";
+	AvatarMarketplaceShoppingCart = "AvatarMarketplace.ShoppingCart";
+	AvatarMarketplaceWidgetPlatformSorts = "AvatarMarketplace.WidgetPlatformSorts";
+	ParentalSpendControlsLayer = "Fraud.PurchaseValidation";
+	AvatarAutocompleteLayer = "PlayerApp.TopNavSearchBox";
+	GameLaunchLayer = "Website.GameLaunch";
+	GameLeaveLayer = "PlayerApp.OnExperienceReturn";
+	ExposureLayer = "Experimentation.ExposureTest.ExposureLayer";
+	AccessLayer = "Experimentation.ExposureTest.AccessLayer";
+	GridUILayer = "PlayerApp.GridUI";
+	ExperienceDetailsPageLayer = "PlayerApp.GameDetailsPage";
+	ExperienceDetailsPageExposureLayer = "PlayerApp.GameDetailsPage.Exposure";
+	ExperienceMenuLayer = "Experience.Menu";
+	ExperienceMenuGamepadExposureLayer = game:DefineFastString("ExperienceMenuGamepadExposureLayer", "Experience.Menu.Gamepad.Exposure");
+	ExperienceMenuSettingsExposureLayer = "Experience.Menu.Settings.Exposure";
+	ConsoleExperienceMenuLayer = "Experience.Menu.Console";
+	LoadingScreenLayer = "Interactivity.LoadingScreen";
+	LuaDesktopToastNotificationLayer = require(Parent.SharedFlags).getFStringDesktopToastNotificationLayer();
+	BottomBarNavLayer = "PlayerApp.BottomBarNav";
+	DesignSystemDesignTokenLayer = "DesignSystem.DesignToken";
+	GamepassRobuxUpsellLayer = "Revenue.UA.Gamepass.RobuxUpsell";
+	PerfRegressionTestLayer = "App.AppPerf.Regression";
+	SocialUserSearchResultsPageLayer = "Social.UserSearchResultsPage";
+	XboxClassicUILayer = game:GetFastString("XboxClassicUILayer");
+	EventsOnExperienceDetailsPageLayer = "Ecosystems.EventsOnExperienceDetailsPage";
+	AdsAdBlock = "Ads.AdBlock";
+	ProfileQRCodeFriendRequestAlertsLayer = "ProfileQRCodeFriendRequestAlertsLayer";
+	ProfileQRCodeLayer = "ProfileQRCodeLayer";
+	ProfileQRCodeScannerLayer = "ProfileQRCodeScannerLayer";
+	NotificationsExperienceInvitationNotificationLayer = "Notifications.ExperienceInvitationNotification";
+	NotificationsStreamNotificationUXLayer = "Notifications.StreamNotificationUX";
+	NotificationsDeliveryLayer = "Notifications.Delivery";
+	PhoneVerificationEntryLayer = "PlayerApp.HomepageUpsell.PhoneVerificationEntry";
+	AndroidPhoneVerificationLayer = require(Parent.SharedFlags).GetFStringAndroidPhoneVerificationLayer();
+	IOSPhoneVerificationLayer = require(Parent.SharedFlags).GetFStringIOSPhoneVerificationLayer();
+	LogoutLayer = "PlayerApp.Logout";
+	AvatarChatLayer = "Voice.AvatarChat";
+	AvatarChatLaunchControlLayer = "Voice.AvatarChat.LaunchControl";
+	DisableAvatarChatOnLowSpecAndroidLayer = "AvatarChat.DisableOnLowSpecAndroid";
+	AvatarChatU13Layer = "Voice.AvatarChat.U13";
+	CameraButton = "AvatarExperience.CameraButtonExposure";
+	VoiceUpsellV2ExperimentLayerLua = game:DefineFastString("VoiceUpsellV2ExperimentLayerLua", "SocialVoice.VoiceUpsell");
+	LuaGameInviteMenuLayer = require(Parent.SharedFlags).GetFStringUniversalAppGameInviteMenuLayer();
+	EDPCommunityLinksLayer = "UserCommunities.EDP.CommunityLinks";
+	EDPPlayerFeedbackExposureLayer = "PlayerApp.EDP.PlayerFeedback.Exposure";
+	PlatformExcellenceQualityImprovementApp = "PlatformExcellence.QualityImprovement.App";
+	PlatformExcellenceQualityImprovementAvatarMarketplace = "PlatformExcellence.QualityImprovement.AvatarMarketplace";
+	AppHealthReportLogs = "AppHealth.ReportLogs";
+	EnableSubscriptionPurchase = "ExperienceDetailPage.EnableSubscriptionPurchase";
+	PushNotificationPrompt = "Notifications.Push.NotificationPrompt";
+	VoicePerformance = "Voice.Performance";
+	PlatformExcellenceQualityImprovementVR = "PlatformExcellence.QualityImprovement.VR";
+	PlatformExcellenceQualityImprovementConsoles = "PlatformExcellence.QualityImprovement.Consoles";
+	MobileSoundAndHapticsLayer = game:GetFastString("MobileSoundAndHapticsLayer");
+	ConsumerPlatformsBugReporting = "ConsumerPlatforms.BugReporting";
+	CreatorSuccessVirtualEvents = "CreatorSuccess.VirtualEvents";
+	PointAndClick = game:DefineFastString("PointAndClickDefaultExperimentLayer", "Engine.Interactivity.InputAndControls.PointAndClickDefault");
+	AppBadgingLayer = game:DefineFastString("AppBadgingLayer", "Notifications.AppBadging");
+}

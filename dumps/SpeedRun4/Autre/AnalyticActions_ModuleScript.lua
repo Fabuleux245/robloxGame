@@ -1,0 +1,23 @@
+-- Decompiler will be improved VERY SOON!
+-- Decompiled with Konstant V2.1, a fast Luau decompiler made in Luau by plusgiant5 (https://discord.gg/brNTY8nX8t)
+-- Decompiled on 2025-07-21 10:29:50
+-- Luau version 6, Types version 3
+-- Time taken: 0.000304 seconds
+
+return {
+	Like = "Like";
+	Unlike = "Unlike";
+	AudioPlay = "AudioPlay";
+	AudioPause = "AudioPause";
+	AudioElapsed = "AudioElapsed";
+	StartAudioReport = "StartAudioReport";
+	StartThumbnailReport = "StartThumbnailReport";
+	Appear = "Appear";
+	SelfDismiss = "SelfDismiss";
+	UserDismiss = "UserDismiss";
+	SeeMore = "SeeMore";
+	OpenReport = "OpenReport";
+	SubmitReport = "SubmitReport";
+	SubmitAudioReport = "SubmitAudioReport";
+	PreventNonAudioReport = "PreventNonAudioReport";
+}

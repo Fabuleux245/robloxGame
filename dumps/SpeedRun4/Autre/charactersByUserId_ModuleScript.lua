@@ -1,0 +1,26 @@
+-- Decompiler will be improved VERY SOON!
+-- Decompiled with Konstant V2.1, a fast Luau decompiler made in Luau by plusgiant5 (https://discord.gg/brNTY8nX8t)
+-- Decompiled on 2025-07-21 09:28:22
+-- Luau version 6, Types version 3
+-- Time taken: 0.000628 seconds
+
+local ExpChatShared = script:FindFirstAncestor("ExpChatShared")
+local Parent = ExpChatShared.Parent
+local Dictionary_upvr = require(Parent.llama).Dictionary
+local Actions = ExpChatShared.Actions
+return require(Parent.Rodux).createReducer({}, {
+	[require(Actions.CharacterAdded).name] = function(arg1, arg2) -- Line 15
+		--[[ Upvalues[1]:
+			[1]: Dictionary_upvr (readonly)
+		]]
+		return Dictionary_upvr.join(arg1, {
+			[arg2.userId] = arg2.character;
+		})
+	end;
+	[require(Actions.PlayerRemoved).name] = function(arg1, arg2) -- Line 21
+		--[[ Upvalues[1]:
+			[1]: Dictionary_upvr (readonly)
+		]]
+		return Dictionary_upvr.removeKey(arg1, arg2.userId)
+	end;
+})

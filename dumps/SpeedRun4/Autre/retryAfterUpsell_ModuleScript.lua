@@ -1,0 +1,120 @@
+-- Decompiler will be improved VERY SOON!
+-- Decompiled with Konstant V2.1, a fast Luau decompiler made in Luau by plusgiant5 (https://discord.gg/brNTY8nX8t)
+-- Decompiled on 2025-07-21 10:51:07
+-- Luau version 6, Types version 3
+-- Time taken: 0.002791 seconds
+
+local Parent = script.Parent.Parent
+local Network_upvr = require(Parent.Services.Network)
+local Analytics_upvr = require(Parent.Services.Analytics)
+local ExternalSettings_upvr = require(Parent.Services.ExternalSettings)
+local module_upvr = {Analytics_upvr, Network_upvr, ExternalSettings_upvr}
+local game_DefineFastInt_result1_upvr = game:DefineFastInt("UpsellAccountBalanceRetryAttemps", 3)
+local Thunk_upvr = require(Parent.Thunk)
+local getUpsellFlow_upvr = require(Parent.NativeUpsell.getUpsellFlow)
+local RequestType_upvr = require(Parent.Enums.RequestType)
+local PromptState_upvr = require(Parent.Enums.PromptState)
+local PurchaseCompleteRecieved_upvr = require(Parent.Actions.PurchaseCompleteRecieved)
+local completeRequest_upvr = require(Parent.Thunks.completeRequest)
+local PurchaseFlow_upvr = require(Parent.Enums.PurchaseFlow)
+local SetPromptState_upvr = require(Parent.Actions.SetPromptState)
+local getBalanceInfo_upvr = require(Parent.Network.getBalanceInfo)
+local getPlayerPrice_upvr = require(Parent.Utils.getPlayerPrice)
+local hasPendingRequest_upvr = require(Parent.Utils.hasPendingRequest)
+local BalanceInfoRecieved_upvr = require(Parent.Actions.BalanceInfoRecieved)
+local getPaymentPlatform_upvr = require(Parent.Utils.getPaymentPlatform)
+local FFlagEnableUpsellSuggestionsAPI_upvr = require(game:GetService("CorePackages").Workspace.Packages.SharedFlags).FFlagEnableUpsellSuggestionsAPI
+local getRobuxUpsellSuggestions_upvr = require(Parent.Network.getRobuxUpsellSuggestions)
+local PromptNativeUpsellSuggestions_upvr = require(Parent.Actions.PromptNativeUpsellSuggestions)
+local sendCounter_upvr = require(Parent.Thunks.sendCounter)
+local Counter_upvr = require(Parent.Enums.Counter)
+local getRobuxUpsellProduct_upvr = require(Parent.Network.getRobuxUpsellProduct)
+local PromptNativeUpsell_upvr = require(Parent.Actions.PromptNativeUpsell)
+local UpsellFlow_upvr = require(Parent.Enums.UpsellFlow)
+local ErrorOccurred_upvr = require(Parent.Actions.ErrorOccurred)
+local PurchaseError_upvr = require(Parent.Enums.PurchaseError)
+local purchaseItem_upvr = require(script.Parent.purchaseItem)
+local game_DefineFastInt_result1_upvr_2 = game:DefineFastInt("UpsellAccountBalanceRetryIntervalSec", 1)
+local function retryAfterUpsell_upvr(arg1) -- Line 48, Named "retryAfterUpsell"
+	--[[ Upvalues[31]:
+		[1]: game_DefineFastInt_result1_upvr (readonly)
+		[2]: Thunk_upvr (readonly)
+		[3]: module_upvr (readonly)
+		[4]: Analytics_upvr (readonly)
+		[5]: Network_upvr (readonly)
+		[6]: ExternalSettings_upvr (readonly)
+		[7]: getUpsellFlow_upvr (readonly)
+		[8]: RequestType_upvr (readonly)
+		[9]: PromptState_upvr (readonly)
+		[10]: PurchaseCompleteRecieved_upvr (readonly)
+		[11]: completeRequest_upvr (readonly)
+		[12]: PurchaseFlow_upvr (readonly)
+		[13]: SetPromptState_upvr (readonly)
+		[14]: getBalanceInfo_upvr (readonly)
+		[15]: getPlayerPrice_upvr (readonly)
+		[16]: hasPendingRequest_upvr (readonly)
+		[17]: BalanceInfoRecieved_upvr (readonly)
+		[18]: getPaymentPlatform_upvr (readonly)
+		[19]: FFlagEnableUpsellSuggestionsAPI_upvr (readonly)
+		[20]: getRobuxUpsellSuggestions_upvr (readonly)
+		[21]: PromptNativeUpsellSuggestions_upvr (readonly)
+		[22]: sendCounter_upvr (readonly)
+		[23]: Counter_upvr (readonly)
+		[24]: getRobuxUpsellProduct_upvr (readonly)
+		[25]: PromptNativeUpsell_upvr (readonly)
+		[26]: UpsellFlow_upvr (readonly)
+		[27]: ErrorOccurred_upvr (readonly)
+		[28]: PurchaseError_upvr (readonly)
+		[29]: purchaseItem_upvr (readonly)
+		[30]: game_DefineFastInt_result1_upvr_2 (readonly)
+		[31]: retryAfterUpsell_upvr (readonly)
+	]]
+	local var32_upvw = arg1
+	if not var32_upvw then
+		var32_upvw = game_DefineFastInt_result1_upvr
+	end
+	return Thunk_upvr.new(script.Name, module_upvr, function(arg1_2, arg2) -- Line 51
+		--[[ Upvalues[29]:
+			[1]: Analytics_upvr (copied, readonly)
+			[2]: Network_upvr (copied, readonly)
+			[3]: ExternalSettings_upvr (copied, readonly)
+			[4]: getUpsellFlow_upvr (copied, readonly)
+			[5]: RequestType_upvr (copied, readonly)
+			[6]: PromptState_upvr (copied, readonly)
+			[7]: PurchaseCompleteRecieved_upvr (copied, readonly)
+			[8]: completeRequest_upvr (copied, readonly)
+			[9]: PurchaseFlow_upvr (copied, readonly)
+			[10]: SetPromptState_upvr (copied, readonly)
+			[11]: getBalanceInfo_upvr (copied, readonly)
+			[12]: getPlayerPrice_upvr (copied, readonly)
+			[13]: hasPendingRequest_upvr (copied, readonly)
+			[14]: BalanceInfoRecieved_upvr (copied, readonly)
+			[15]: getPaymentPlatform_upvr (copied, readonly)
+			[16]: FFlagEnableUpsellSuggestionsAPI_upvr (copied, readonly)
+			[17]: getRobuxUpsellSuggestions_upvr (copied, readonly)
+			[18]: PromptNativeUpsellSuggestions_upvr (copied, readonly)
+			[19]: sendCounter_upvr (copied, readonly)
+			[20]: Counter_upvr (copied, readonly)
+			[21]: getRobuxUpsellProduct_upvr (copied, readonly)
+			[22]: PromptNativeUpsell_upvr (copied, readonly)
+			[23]: UpsellFlow_upvr (copied, readonly)
+			[24]: ErrorOccurred_upvr (copied, readonly)
+			[25]: PurchaseError_upvr (copied, readonly)
+			[26]: purchaseItem_upvr (copied, readonly)
+			[27]: var32_upvw (read and write)
+			[28]: game_DefineFastInt_result1_upvr_2 (copied, readonly)
+			[29]: retryAfterUpsell_upvr (copied, readonly)
+		]]
+		-- KONSTANTERROR: [0] 1. Error Block 1 start (CF ANALYSIS FAILED)
+		local any_getState_result1 = arg1_2:getState()
+		-- KONSTANTERROR: [0] 1. Error Block 1 end (CF ANALYSIS FAILED)
+		-- KONSTANTERROR: [27] 20. Error Block 2 start (CF ANALYSIS FAILED)
+		do
+			return
+		end
+		-- KONSTANTERROR: [27] 20. Error Block 2 end (CF ANALYSIS FAILED)
+		-- KONSTANTERROR: [28] 21. Error Block 3 start (CF ANALYSIS FAILED)
+		-- KONSTANTERROR: [28] 21. Error Block 3 end (CF ANALYSIS FAILED)
+	end)
+end
+return retryAfterUpsell_upvr

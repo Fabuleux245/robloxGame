@@ -1,0 +1,18 @@
+-- Decompiler will be improved VERY SOON!
+-- Decompiled with Konstant V2.1, a fast Luau decompiler made in Luau by plusgiant5 (https://discord.gg/brNTY8nX8t)
+-- Decompiled on 2025-07-21 10:54:24
+-- Luau version 6, Types version 3
+-- Time taken: 0.000433 seconds
+
+local InGameMenuDependencies = require(game:GetService("CorePackages").Packages.InGameMenuDependencies)
+local module = {}
+local Cryo_upvr = InGameMenuDependencies.Cryo
+module[require(script.Parent.Parent.Actions.ReceivedUserInviteStatus).name] = function(arg1, arg2) -- Line 12
+	--[[ Upvalues[1]:
+		[1]: Cryo_upvr (readonly)
+	]]
+	return Cryo_upvr.Dictionary.join(arg1, {
+		[arg2.userId] = arg2.inviteStatus;
+	})
+end
+return InGameMenuDependencies.Rodux.createReducer({}, module)

@@ -1,0 +1,24 @@
+-- Decompiler will be improved VERY SOON!
+-- Decompiled with Konstant V2.1, a fast Luau decompiler made in Luau by plusgiant5 (https://discord.gg/brNTY8nX8t)
+-- Decompiled on 2025-07-21 10:52:17
+-- Luau version 6, Types version 3
+-- Time taken: 0.000577 seconds
+
+local Parent = script.Parent.Parent
+return require(game:GetService("CorePackages").Packages.Rodux).createReducer({
+	overlay = nil;
+	overlayProps = {};
+}, {
+	[require(Parent.Actions.OpenOverlay).name] = function(arg1, arg2) -- Line 25
+		return {
+			overlay = arg2.overlay;
+			overlayProps = arg2.overlayProps;
+		}
+	end;
+	[require(Parent.Actions.CloseOverlay).name] = function(arg1, arg2) -- Line 33
+		return {
+			overlay = nil;
+			overlayProps = {};
+		}
+	end;
+})

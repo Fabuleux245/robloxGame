@@ -1,0 +1,26 @@
+-- Decompiler will be improved VERY SOON!
+-- Decompiled with Konstant V2.1, a fast Luau decompiler made in Luau by plusgiant5 (https://discord.gg/brNTY8nX8t)
+-- Decompiled on 2025-07-21 09:48:43
+-- Luau version 6, Types version 3
+-- Time taken: 0.000320 seconds
+
+return {
+	AVATAR_PADDING = 20;
+	CHAT_MESSAGE_MAX_SPACE = 10;
+	CHAT_MESSAGE_MIN_SPACE = 2;
+	MESSAGE_RIGHT_PADDING = 8;
+	THUMBNAIL_SIZE = 28;
+	NOTICE_HORIZONTAL_PADDING = 10;
+	DATETIME_MAX_WIDTH = 1000;
+	SHIMMER_WIDTH = 150;
+	SHIMMER_HEIGHT = 20;
+	ALERT_ICON_IMAGE = "rbxasset://textures/ui/LuaChat/icons/ic-alert.png";
+	ALERT_ICON_SIZE = 18;
+	TAIL_WIDTH = 6;
+	REPLIED_DISPLAY_NAME_BOTTOM_PADDING = 7;
+	INPUT_BEGAN_DELAY_MILLISEC = 175;
+	LONG_PRESS_DELAY_MILLISEC = 175;
+	PEEK_VIEW_ANIMATION_MILLISEC = 75;
+	GROUPED_MESSAGE_DISPLAY_NAME_LEFT_PADDING = 14;
+	GROUPED_MESSAGE_DISPLAY_NAME_BOTTOM_PADDING = 2;
+}

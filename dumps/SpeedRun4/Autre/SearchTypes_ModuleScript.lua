@@ -1,0 +1,15 @@
+-- Decompiler will be improved VERY SOON!
+-- Decompiled with Konstant V2.1, a fast Luau decompiler made in Luau by plusgiant5 (https://discord.gg/brNTY8nX8t)
+-- Decompiled on 2025-07-21 10:19:00
+-- Luau version 6, Types version 3
+-- Time taken: 0.000341 seconds
+
+return {
+	Games = "Games";
+	Groups = "Groups";
+	Players = "Players";
+	Catalog = "Catalog";
+	Library = "Library";
+	Auto = "Auto";
+	TopResults = "TopResults";
+}

@@ -1,0 +1,13 @@
+-- Decompiler will be improved VERY SOON!
+-- Decompiled with Konstant V2.1, a fast Luau decompiler made in Luau by plusgiant5 (https://discord.gg/brNTY8nX8t)
+-- Decompiled on 2025-07-21 08:50:50
+-- Luau version 6, Types version 3
+-- Time taken: 0.000551 seconds
+
+local String_upvr = require(script.Parent.Parent.Parent.LuauPolyfill).String
+return function(arg1) -- Line 6
+	--[[ Upvalues[1]:
+		[1]: String_upvr (readonly)
+	]]
+	return "\"\\u"..String_upvr.slice("0000"..string.format("%x", arg1), -4):upper()..'"'
+end
