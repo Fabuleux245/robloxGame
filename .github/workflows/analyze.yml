@@ -1,0 +1,35 @@
+name: Analyze Lua dumps
+
+on:
+  push:
+    paths:
+      - 'dumps/**/*.lua'
+      - 'tools/**'
+      - '.github/workflows/analyze.yml'
+  workflow_dispatch: {}
+
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run summarize_lua.py
+        run: |
+          python tools/summarize_lua.py dumps
+          mkdir -p summary
+          mv summary.json summary/summary.json
+          mv suspicious.csv summary/suspicious.csv
+
+      - name: Upload reports
+        uses: actions/upload-artifact@v4
+        with:
+          name: reports
+          path: summary/
