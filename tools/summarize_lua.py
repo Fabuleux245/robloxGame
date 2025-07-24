@@ -54,7 +54,6 @@ files_info = []
 hash_map = {}
 
 if not ROOT.exists():
-    # On génère quand même des rapports vides pour que la CI ne plante pas
     write_empty_reports()
     print(f"[!] Le dossier {ROOT} n'existe pas. Rapports vides générés.")
     sys.exit(0)
@@ -93,7 +92,6 @@ for p in ROOT.rglob("*.lua"):
     files_info.append(info)
     hash_map.setdefault(h, []).append(info["path"])
 
-# Déduplication
 for info in files_info:
     info["duplicates"] = len(hash_map[info["hash"]])
 
@@ -118,3 +116,4 @@ with open("suspicious.csv", "w", newline="", encoding="utf-8") as f:
         ])
 
 print("OK -> summary.json & suspicious.csv générés.")
+
